@@ -31,6 +31,7 @@ export const GameList = (props) => {
             <div className="game__skillLevel">
               Skill level is {game.skill_level}
             </div>
+            <button onClick={() => navigate(`/games/update/${game.id}`)}>Edit</button>
           </section>
         );
       })}
