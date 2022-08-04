@@ -29,6 +29,7 @@ export const EventList = (props) => {
             <div className="event__game">Game: {event.game.title}</div>
             <div className="event__date">Date: {event.date}</div>
             <div className="event__time">Time: {event.time}</div>
+            <button onClick={()=>navigate(`/events/update/${event.id}`)}>edit</button>
           </section>
         );
       })}
